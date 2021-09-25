@@ -41,6 +41,6 @@ public class RestAssuredBasics2 {
          RestAssured.given()
                  .get("https://chercher.tech/sample/api/product/read ")
                  .then()
-                .body("records.created", everyItem(lessThan(formatter.format(date))));
+                 .body("records.created", everyItem(lessThan(formatter.format(date))));
     }
 }
